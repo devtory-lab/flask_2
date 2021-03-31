@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}Index.html extends base.html{% endblock %}
-{% block head %}Hello World!{% endblock %}
+{% block head %}Task Master{% endblock %}
 {% block body %}
     <table>
         <tr>
@@ -18,4 +18,11 @@
             </td>
         </tr>
     </table>
+
+    <div class="form">
+        <form action="/" method="post">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Add Task">
+        </form>
+    </div>
 {% endblock %}
