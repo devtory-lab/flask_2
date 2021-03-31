@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
@@ -17,7 +17,7 @@ class Todl(db.Model):
 
 @app.route('/')
 def index():
-    return "Hello world!"
+    return render_template('index.html')
 
 
 
